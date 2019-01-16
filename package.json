@@ -1,0 +1,19 @@
+{
+  "name": "deploy-to-github-docs",
+  "version": "1.0.0",
+  "description": "docs of deployToGithub",
+  "repository": "https://github.com/Asurvovor/deployToGithub.git",
+  "author": "asurvovor",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "predeploy": "yarn docs:build",
+    "deploy": "gh-pages -d docs/.vuepress/deployToGithub"
+  },
+  "dependencies": {
+    "vuepress": "^0.14.4"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  }
+}

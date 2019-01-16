@@ -1,0 +1,5 @@
+node_modules/
+docs/.vuepress/dist/
+docs/.vuepress/deployToGithub/
+.DS_Store
+yarn-error.log
